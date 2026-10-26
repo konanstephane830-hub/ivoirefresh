@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IvoireFresh - Supermarché Connecté | Abidjan</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700;800&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>*{font-family:'Outfit',sans-serif}</style>
+</head>
+<body class="bg-gray-50">
+
+<nav class="fixed w-full bg-white/90 backdrop-blur z-50 border-b">
+<div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+<div class="flex items-center gap-2"><div class="w-9 h-9 bg-green-600 rounded-xl flex items-center justify-center text-white font-bold">IF</div><span class="font-extrabold text-xl">IvoireFresh</span></div>
+<div class="hidden md:flex gap-8 text-sm font-medium"><a href="#accueil">Accueil</a><a href="#fonctionnalites">Fonctionnalités</a><a href="#destination">Offres</a></div>
+<a href="#destination" class="bg-green-600 text-white px-6 py-2.5 rounded-full font-semibold">Commander</a>
+</div>
+</nav>
+
+<!-- 3. PAGE D'ACCUEIL -->
+<section id="accueil" class="bg-gradient-to-br from-slate-900 to-green-600 pt-32 pb-20 px-6 text-white">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div>
+<div class="inline-flex bg-white/20 px-4 py-1 rounded-full text-xs mb-4">🚀 Nouveau à Abidjan - Cocody, Yopougon, Marcory</div>
+<h1 class="text-5xl md:text-6xl font-extrabold leading-tight">Faites vos courses<br><span class="text-green-300">sans embouteillage</span></h1>
+<p class="mt-6 text-lg text-white/80">IvoireFresh digitalise votre supermarché. Promos en temps réel, anti-gaspi -50%, et livraison en 45 min.</p>
+<div class="mt-8 flex gap-4"><a href="#fonctionnalites" class="bg-white text-gray-900 px-8 py-3 rounded-full font-bold">Découvrir</a><a href="#destination" class="border border-white/30 px-8 py-3 rounded-full font-bold">Voir les offres</a></div>
+</div>
+<div class="relative">
+<img src="https://images.unsplash.com/photo-1542838132-92c53300491e?w=800" class="rounded-[2rem] shadow-2xl w-full h-[500px] object-cover">
+</div>
+</div>
+</section>
+
+<!-- 4. PAGES DE FONCTIONNALITÉS -->
+<section id="fonctionnalites" class="max-w-7xl mx-auto px-6 py-24">
+<div class="text-center max-w-2xl mx-auto"><h2 class="text-4xl font-extrabold">Tout votre supermarché, dans votre poche</h2></div>
+<div class="grid md:grid-cols-3 gap-8 mt-16">
+<div class="bg-white p-8 rounded-[2rem] border hover:-translate-y-2 transition"><div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">💳</div><h3 class="font-bold text-xl mt-6">Carte Fidélité Digitale</h3><p class="text-gray-500 mt-3 text-sm">Chaque 1000F = 20 points. Fini la carte plastique qui se perd.</p><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400" class="mt-6 rounded-xl h-40 w-full object-cover"></div>
+<div class="bg-white p-8 rounded-[2rem] border hover:-translate-y-2 transition"><div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">⏰</div><h3 class="font-bold text-xl mt-6">Rayon Anti-Gaspi -50%</h3><p class="text-gray-500 mt-3 text-sm">Produits proches de la date chaque soir à 18h. Vous économisez, nous jetons moins.</p><img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?w=400" class="mt-6 rounded-xl h-40 w-full object-cover"></div>
+<div class="bg-white p-8 rounded-[2rem] border hover:-translate-y-2 transition"><div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">🛵</div><h3 class="font-bold text-xl mt-6">Click & Collect + Livraison</h3><p class="text-gray-500 mt-3 text-sm">Commandez, récupérez en 10 min sans queue, ou livraison à domicile.</p><img src="https://images.unsplash.com/photo-1583258292688-d0213c4b8b31?w=400" class="mt-6 rounded-xl h-40 w-full object-cover"></div>
+</div>
+</section>
+
+<!-- 5. PAGE DE DESTINATION -->
+<section id="destination" class="bg-gray-900 text-white py-24 px-6">
+<div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+<div>
+<h2 class="text-5xl font-extrabold">Prêt à économiser<br><span class="text-green-400">5000F par semaine ?</span></h2>
+<form class="mt-8 flex gap-3" onsubmit="event.preventDefault(); alert('Inscrit !');">
+<input type="tel" placeholder="Votre WhatsApp" class="flex-1 px-6 py-4 rounded-full bg-white text-gray-900 outline-none" required>
+<button class="bg-green-500 px-8 py-4 rounded-full font-bold">S'inscrire</button>
+</form>
+</div>
+<div class="bg-white text-gray-900 rounded-[2rem] p-8">
+<h3 class="font-extrabold text-2xl">Produits Phares</h3>
+<div class="grid grid-cols-2 gap-4 mt-6">
+<div class="border rounded-2xl p-3"><img src="https://images.unsplash.com/photo-1563636619-e9143da7973b?w=300" class="rounded-xl h-24 w-full object-cover"><div class="font-bold text-sm mt-2">Riz 5kg</div><div class="font-bold text-green-600">6 500F</div></div>
+<div class="border rounded-2xl p-3"><img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?w=300" class="rounded-xl h-24 w-full object-cover"><div class="font-bold text-sm mt-2">Huile 1L</div><div class="font-bold text-green-600">1 200F</div></div>
+</div>
+</div>
+</div>
+</section>
+
+<footer class="bg-black text-white/40 text-center py-8 text-xs">© 2026 IvoireFresh par Yao Charles Stéphane K. - GoMyCode | Images Unsplash gratuites</footer>
+</body>
+</html>
