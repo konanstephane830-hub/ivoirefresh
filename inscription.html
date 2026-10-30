@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>IvoireFresh - Inscription</title>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+* {margin:0;padding:0;box-sizing:border-box;font-family:'Outfit',sans-serif;}
+body{
+  min-height:100vh;
+  /* CONSIGNE 3 : display flex pour centrer */
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  background: radial-gradient(1200px at 20% 10%, #22c55e33, transparent), #0f172a;
+  padding:20px;
+}
+.card{
+  width:100%; max-width:420px; background:white;
+  border-radius:28px; padding:36px 32px;
+  box-shadow:0 25px 80px rgba(0,0,0,0.35);
+}
+/* CONSIGNE 2 : Logo au formulaire */
+.logo{width:64px;height:64px;background:#16a34a;border-radius:18px;display:flex;justify-content:center;align-items:center;color:white;font-weight:800;font-size:22px;margin:0 auto 20px;}
+h1{font-size:26px;text-align:center;font-weight:800;}
+.sub{font-size:14px;text-align:center;color:#64748b;margin:6px 0 24px;}
+label{font-size:13px;font-weight:600;color:#334155;margin:16px 0 6px;display:block;}
+input{width:100%;padding:13px 16px;border-radius:12px;border:1.5px solid #e2e8f0;background:#f8fafc;outline:none;}
+input:focus{border-color:#16a34a;background:white;}
+.btn{width:100%;margin-top:24px;padding:14px;border:none;border-radius:12px;background:#16a34a;color:white;font-weight:700;cursor:pointer;}
+.btn:hover{background:#15803d;}
+</style>
+</head>
+<body>
+
+<div class="card">
+  <div class="logo">IF</div>
+  <h1>Rejoins IvoireFresh</h1>
+  <p class="sub">1000 points offerts à l'inscription</p>
+
+  <!-- CONSIGNE 1 : Formulaire d'inscription -->
+  <form onsubmit="event.preventDefault(); alert('Compte créé !');">
+    <label>Nom complet</label>
+    <input type="text" placeholder="Ex: Konan Stéphane" required>
+    
+    <label>WhatsApp</label>
+    <input type="tel" placeholder="+225 07 00 00 00 00" required>
+    
+    <label>Email</label>
+    <input type="email" placeholder="vous@exemple.com" required>
+    
+    <label>Mot de passe</label>
+    <input type="password" placeholder="••••••••" required>
+    
+    <button class="btn" type="submit">Créer mon compte →</button>
+  </form>
+</div>
+
+</body>
+</html>
